@@ -91,6 +91,7 @@ plugins=(git)
 
 # User configuration
 
+
 export PATH="./bin:/usr/local/bin:/usr/local/sbin:/Users/matt/.dotfiles/bin:/Users/matt/Code/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin"
 export PATH="/Users/matt/.composer/vendor/bin:$PATH:"
 export PATH=/usr/local/php5/bin:$PATH
