@@ -1,0 +1,35 @@
+set spoolfile="imaps://matt_cannon#fastmail.fm:v9acGxC6@mail.messagingengine.com/INBOX"
+set folder="imaps://mail.messagingengine.com/INBOX"
+set ssl_starttls=yes
+set imap_user="matt_cannon#fastmail.fm"
+set imap_pass="v9acGxC6"
+set from="Matt Cannon <matt@mattcannon.uk>"
+set allow_ansi=yes
+
+color normal green default
+color hdrdefault green default
+
+color status white black
+color indicator white black
+color message white black
+
+color header magenta default "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+color body blue default  "(http|https|ftp|news|telnet|finger)://[^ \">\t\r\n]*"
+
+
+set editor="vim -c 'set spell spelllang=en'"
+set mail_check=60
+set timeout = 60
+mailboxes =INBOX.
+
+set pager_context = 3
+
+macro pager \cf <pipe-entry>'vim-'<enter>
+macro pager \cl "<pipe-entry>lynx -stdin -force_html<enter>"
+macro pager \cs "<pipe-entry>open -a /Applications/Safari.app -f<enter>"
+#mail.messagingengine.com
+#Port	993
+#SSL/TLS Encryption	Enabled, but not STARTTLS
+#Username	matt_cannon@fastmail.fm
+#Password	v9acGxC6
+#Root folder/path	INBOX
